@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GasPal", "GasPal\GasPal.csproj", "{EAC4AF32-5747-4664-9721-5B5433FC0905}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAC4AF32-5747-4664-9721-5B5433FC0905}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAC4AF32-5747-4664-9721-5B5433FC0905}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAC4AF32-5747-4664-9721-5B5433FC0905}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAC4AF32-5747-4664-9721-5B5433FC0905}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80687A78-C1EE-45A6-A7FA-22AD165B5133}
+	EndGlobalSection
+EndGlobal
