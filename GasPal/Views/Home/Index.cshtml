@@ -43,10 +43,10 @@
 
 <p>
     Gas prices are as followed:<br />
-    87: $3.70 <br />
-    89: $4.05 <br />
-    93: $4.40 <br />
-    Diesel: $5.62 <br />
+    87: $3.94 <br />
+    89: $4.39 <br />
+    93: $4.86 <br />
+    Diesel: $5.99 <br />
 </p>
 
 <label for="amenities">Amenities Include:</label>
@@ -57,33 +57,8 @@
     <option value="dunkins">Dunkin Donuts</option>
     <option value="carwash">Car Wash</option>
 </select>
-<p>Click the button to get your coordinates.</p>
+<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1458.3097486772724!2d-71.44034511630554!3d43.02839556859592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e2458582d3c4bd%3A0x1144a45151c43774!2sIrving%20Oil!5e0!3m2!1sen!2sus!4v1670969070135!5m2!1sen!2sus" width="1000" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
 
-<button onclick="getLocation()">Try It</button>
-
-<p id="demo"></p>
-
-<script>var x = document.getElementById("demo");
-    document.getElementById("locLink").src =
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1458.3038938839231!2d" + position.location.latitude + "!3d" + position.location.longitude + "!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e2458582d3c4bd%3A0x1144a45151c43774!2sIrving%20Oil!5e0!3m2!1sen!2sus!4v1667927247700!5m2!1sen!2sus" ReturnURL();
-    function getLocation() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(showPosition);
-        } else {
-            x.innerHTML = "Geolocation is not supported by this browser.";
-        }
-    }
-
-    function showPosition(position) {
-        x.innerHTML = "Latitude: " + position.coords.latitude +
-            "<br>Longitude: " + position.coords.longitude;
-    }</script>
-
-<!--var locLink = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1458.3038938839231!2d"+ position.location.latitude + "!3d" + position.location.longitude +"!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e2458582d3c4bd%3A0x1144a45151c43774!2sIrving%20Oil!5e0!3m2!1sen!2sus!4v1667927247700!5m2!1sen!2sus" -->
-<p style="text-align: center;">
-    <iframe id="locLink" src=""
-            width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</p>
 
 
 

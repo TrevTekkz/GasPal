@@ -1,26 +1,30 @@
-﻿
+﻿@model GasPal.Models.CreateAccount
 @{
     Layout = "";
 }
-
+<html>
 <div class="text-center">
     <h1 class="display-4">Gas Pal</h1>
 </div>
 
 <form>
-    <label for="firstname">First Name:</label><br />
-    <input type="text" id="firstname" name="firstname"><br>
-    <label for="lastname">Last Name:</label><br />
-    <input type="text" id="lastname" name="lastname"><br>
-    <label for="email">Email:</label><br>
-    <input type="text" id="email" name="email"><br>
-    <label for="password">Password:</label><br>
-    <input type="text" id="password" name="password"><br>
-    <label for="confirmpassword">Confirm Password:</label><br>
-    <input type="text" id="confirmpassword" name="confirmpassword"><br>
-    <label for="zipcode">Zipcode:</label><br>
-    <input type="text" id="zipcode" name="zipcode"><br>
-    <input type="submit" value="Submit">
+    <label id="firstname" asp-for="FirstName">First Name:</label><br />
+    <input type="text" id="firstname" asp-for="FirstName" name="firstname"><br>
+    <span asp-validation-for="FirstName" class="text-danger">   </span>
+    <label id="lastname" asp-for="LastName" >Last Name:</label><br />
+    <input type="text" id="lastname" asp-for="LastName" name="lastname"><br>
+    <span asp-validation-for="LastName" class="text-danger">   </span>
+    <label id="email" asp-for="Email">Email:</label><br>
+    <input type="text" id="email" asp-for="Email" name="email"><br>
+    <span asp-validation-for="Email" class="text-danger"></span>
+    <label id="password" asp-for="Password">Password:</label><br>
+    <input type="text" id="password" asp-for="Password" name="password"><br />
+    <span asp-validation-for="Password" class="text-danger"></span>
+    <label id="zipcode" asp-for="Zipcode">Zipcode:</label><br>
+    <input type="text" id="zipcode"asp-for="Zipcode" name="zipcode"><br>
+    <span asp-validation-for="Zipcode" class="text-danger">   </span>
+    <button type="submit" value="Submit" onclick="location.href='@Url.Action("CreateAccount", "CreateAccount")'">Submit</button>
+    
 </form>
 <style>
     input[type=text] {
@@ -43,3 +47,5 @@
         cursor: pointer;
     }
 </style>
+
+    </html>

@@ -11,9 +11,6 @@
     <None Remove="MySql.Data" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Views\Login\" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="MySql.Data" Version="8.0.31" />
   </ItemGroup>
 </Project>
